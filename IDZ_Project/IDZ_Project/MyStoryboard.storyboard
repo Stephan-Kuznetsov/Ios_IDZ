@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vGM-dA-q7V">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="JCn-vK-aT9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3d-G8-VYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="vGM-dA-q7V" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VU3-Qf-bpP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Xe-uB-Fcu">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="a1D-Ux-GOt" kind="relationship" relationship="rootViewController" id="2BZ-Vr-sVc"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="799" y="117"/>
+        </scene>
+        <!--My Storyboard View Controller-->
+        <scene sceneID="0hE-6b-rNt">
+            <objects>
+                <viewController storyboardIdentifier="MyStoryboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a1D-Ux-GOt" customClass="MyStoryboardViewController" customModule="IDZ_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hi2-z2-Wzv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ny7-d2-07E">
+                                <rect key="frame" x="70" y="290.5" width="274" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Авторизация" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yq-hq-GhR">
+                                <rect key="frame" x="130" y="163" width="154" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wj-a1-58Q" userLabel="PasswLabel">
+                                <rect key="frame" x="70" y="349.5" width="274" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1K-8f-Ftx" userLabel="LoginLabel">
+                                <rect key="frame" x="70" y="249.5" width="274" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4e-iq-Y5c">
+                                <rect key="frame" x="75" y="449.5" width="264" height="35"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="i6H-o7-BA8"/>
+                                </constraints>
+                                <state key="normal" title="Выполнить вход"/>
+                                <connections>
+                                    <action selector="LoginTouch:" destination="a1D-Ux-GOt" eventType="touchUpInside" id="L1D-ZB-Iyf"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lqE-Fz-Nv1">
+                                <rect key="frame" x="70" y="390.5" width="274" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Wj-a1-58Q" firstAttribute="top" secondItem="Ny7-d2-07E" secondAttribute="bottom" constant="25" id="2b4-wV-YWp"/>
+                            <constraint firstItem="COz-Sk-pBO" firstAttribute="trailing" secondItem="6Wj-a1-58Q" secondAttribute="trailing" constant="70" id="85F-ZD-Qoe"/>
+                            <constraint firstItem="m1K-8f-Ftx" firstAttribute="top" secondItem="1yq-hq-GhR" secondAttribute="bottom" constant="60" id="DZI-JL-hG6"/>
+                            <constraint firstItem="COz-Sk-pBO" firstAttribute="trailing" secondItem="1yq-hq-GhR" secondAttribute="trailing" constant="130" id="FJc-Ca-vB9"/>
+                            <constraint firstItem="1yq-hq-GhR" firstAttribute="top" secondItem="Hi2-z2-Wzv" secondAttribute="topMargin" constant="75" id="K0T-Nb-sLT"/>
+                            <constraint firstItem="u4e-iq-Y5c" firstAttribute="top" secondItem="lqE-Fz-Nv1" secondAttribute="bottom" constant="25" id="Kfb-Z9-buI"/>
+                            <constraint firstItem="lqE-Fz-Nv1" firstAttribute="leading" secondItem="COz-Sk-pBO" secondAttribute="leading" constant="70" id="Nt6-ak-6K9"/>
+                            <constraint firstItem="COz-Sk-pBO" firstAttribute="trailing" secondItem="lqE-Fz-Nv1" secondAttribute="trailing" constant="70" id="QQo-md-8vk"/>
+                            <constraint firstItem="COz-Sk-pBO" firstAttribute="trailing" secondItem="Ny7-d2-07E" secondAttribute="trailing" constant="70" id="T1x-hu-R4f"/>
+                            <constraint firstItem="u4e-iq-Y5c" firstAttribute="leading" secondItem="COz-Sk-pBO" secondAttribute="leading" constant="75" id="TG0-if-J1M"/>
+                            <constraint firstItem="COz-Sk-pBO" firstAttribute="trailing" secondItem="u4e-iq-Y5c" secondAttribute="trailing" constant="75" id="XdN-0D-CJV"/>
+                            <constraint firstItem="1yq-hq-GhR" firstAttribute="leading" secondItem="COz-Sk-pBO" secondAttribute="leading" constant="130" id="YYJ-OL-eyq"/>
+                            <constraint firstItem="Ny7-d2-07E" firstAttribute="leading" secondItem="COz-Sk-pBO" secondAttribute="leading" constant="70" id="ZM0-pC-SzK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m1K-8f-Ftx" secondAttribute="trailing" constant="50" id="ZSZ-Gy-wVO"/>
+                            <constraint firstItem="lqE-Fz-Nv1" firstAttribute="top" secondItem="6Wj-a1-58Q" secondAttribute="bottom" constant="20" id="ae0-wd-Neg"/>
+                            <constraint firstItem="Ny7-d2-07E" firstAttribute="top" secondItem="m1K-8f-Ftx" secondAttribute="bottom" constant="20" id="aow-pf-akc"/>
+                            <constraint firstItem="m1K-8f-Ftx" firstAttribute="leading" secondItem="Hi2-z2-Wzv" secondAttribute="leadingMargin" constant="50" id="gCy-rT-0FE"/>
+                            <constraint firstItem="6Wj-a1-58Q" firstAttribute="leading" secondItem="COz-Sk-pBO" secondAttribute="leading" constant="70" id="xMY-jI-ApV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="COz-Sk-pBO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tGl-Y9-VEm">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="0Sz-WV-hyY"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="LoginField" destination="Ny7-d2-07E" id="POF-i7-SqO"/>
+                        <outlet property="PasswField" destination="lqE-Fz-Nv1" id="zt4-ND-EPY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hG0-5T-ulX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+        </scene>
+        <!--App View Controller1-->
+        <scene sceneID="ljL-YG-D9s">
+            <objects>
+                <viewController storyboardIdentifier="AppViewController1" id="NP7-Q7-hW0" customClass="AppViewController1" customModule="IDZ_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uxs-6O-GEh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Авторизация успешно выполнена" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3l-5Q-6ZD">
+                                <rect key="frame" x="20" y="124" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="l3l-5Q-6ZD" firstAttribute="top" secondItem="u6Z-Q2-Jbe" secondAttribute="top" constant="80" id="7ct-w3-NM1"/>
+                            <constraint firstItem="u6Z-Q2-Jbe" firstAttribute="trailing" secondItem="l3l-5Q-6ZD" secondAttribute="trailing" constant="20" id="Vsx-8f-vjK"/>
+                            <constraint firstItem="l3l-5Q-6ZD" firstAttribute="leading" secondItem="u6Z-Q2-Jbe" secondAttribute="leading" constant="20" id="kVj-OP-FQp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u6Z-Q2-Jbe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rtP-7i-O3f">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="KtW-j6-7pk"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="469-ru-8gE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="754.6875"/>
+        </scene>
+    </scenes>
+</document>
